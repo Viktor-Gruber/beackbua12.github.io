@@ -15,7 +15,7 @@ h2 {
 
 .profilbild {
 
-    width: 200px;
+    width: 180px;
 
 
 
@@ -36,4 +36,15 @@ header {
 a {
     color: brown;
     text-decoration: none;
+}
+
+.x {
+    color: red;
+}
+
+.profilbild {
+
+    border: 2px solid #4fc3f7;
+    box-shadow: 0 0 10px #4fc3f7;
+
 }
