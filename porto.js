@@ -1,8 +1,38 @@
 console.log("Hello, World!");
-document.getElementById("x").addEventListener("click", function () {
-    alert("Button wurde gedrückt!");
-    console.log([0, 1, 3]);
-    Math.random();
-    Math.floor(Math.random() * 10) + 1;
-    console.log(Math.floor(Math.random() * 10) + 1);
+
+// liste aufpassen const kann man nicht mehr ändern let schon :)
+const moeglichkeiten = ["Schere", "Stein", "Papier"];
+
+// spiele Button
+    document.getElementById("x").addEventListener("click", function () {
+
+        document.getElementById("spiele").hidden = false;
 });
+// Wupp schere button
+
+document.getElementById("schere").addEventListener("click", function () {
+
+    const spielerWahl = "schere";
+    let zufall = Math.floor(Math.random() * 3);
+    let computerWahl = moeglichkeiten[zufall];
+    console.log("Du:", spielerWahl, "Computer:", computerWahl);
+})
+// Huans Stoa
+
+document.getElementById("stein").addEventListener("click", function () {
+    
+    const spielerWahl = "stein";
+    let zufall = Math.floor(Math.random() * 3);
+    let computerWahl = moeglichkeiten[zufall];
+    console.log("Du.", spielerWahl, "Computer:",computerWahl);
+}) 
+
+// Scheiß Papier
+
+document.getElementById("papier").addEventListener("click", function () {
+    
+    const spielerWahl = "papier";
+let zufall = Math.floor(Math.random() * 3);
+let computerWahl = moeglichkeiten[zufall];
+    console.log("Du:", spielerWahl, "Computer:" ,computerWahl);
+})
