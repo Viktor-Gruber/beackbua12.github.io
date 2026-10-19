@@ -8,7 +8,7 @@ const moeglichkeiten = ["Schere", "Stein", "Papier"];
 
         document.getElementById("spiele").hidden = false;
 });
-// Wupp schere button
+// Wupp schere button gottsedank hot ds nd so laung dauert XD
 
 document.getElementById("schere").addEventListener("click", function () {
 
