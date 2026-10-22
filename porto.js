@@ -1,17 +1,19 @@
 console.log("Hello, World!");
 // liste aufpassen const kann man nicht mehr ändern let schon :)
 // o doch sr, mit einen push :(
+    const playeranzeige = document.getElementById("player")
+    const computeranzeige = document.getElementById("computer")
     let player = 0
     let computer = 0
 const moeglichkeiten = ["Schere", "Stein", "Papier"];
 function spielen(spielerWahl) {
     // Math floor für keine kommazahlen
+    
     let zufall = Math.floor(Math.random() * 3);
     let computerWahl = moeglichkeiten[zufall];
     console.log("Du:", spielerWahl, "Computer:", computerWahl);
     // Für die Konsole zum Testen document (console.log)
-    const playeranzeige = document.getElementById("player")
-    const computeranzeige = document.getElementById("computer")
+   
     const ergebnis = document.getElementById("ergebnis")
     const wahl = document.getElementById("wahl")
     wahl.textContent = "Du " + spielerWahl + " Computer " + computerWahl;
@@ -61,5 +63,11 @@ document.getElementById("Papier").addEventListener("click", function () {
     // snipi snapi snu aaaaaaaaaaaaa
    spielen("Papier")
 });
-
+// restart Button
+document.getElementById("restart").addEventListener("click", function () {
+    player = 0
+    computer = 0
+    playeranzeige.textContent = "Spieler: " + player;
+    computeranzeige.textContent = "Computer: " + computer;
+})
 
