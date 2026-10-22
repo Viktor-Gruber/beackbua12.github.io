@@ -1,6 +1,6 @@
 console.log("Hello, World!");
 // liste aufpassen const kann man nicht mehr ändern let schon :)
-// o doch sr, mit einen push :(
+// o doch sr, mit einen push :( btw das ist der scope der zwischen raum für alle 
     const playeranzeige = document.getElementById("player")
     const computeranzeige = document.getElementById("computer")
     let player = 0
@@ -16,7 +16,7 @@ function spielen(spielerWahl) {
    
     const ergebnis = document.getElementById("ergebnis")
     const wahl = document.getElementById("wahl")
-    wahl.textContent = "Du " + spielerWahl + " Computer " + computerWahl;
+    wahl.textContent = "Spieler: " + spielerWahl + " Computer: " + computerWahl;
     if (spielerWahl === computerWahl) {
         console.log("Unentschieden!");
         ergebnis.textContent = "Unentschieden";

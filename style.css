@@ -11,6 +11,7 @@ h1 {
 
 h2 {
     color: #4fc3f7;
+    text-align: center;
 }
 
 .profilbild {
@@ -25,7 +26,7 @@ h2 {
 main {
     max-width: 800px;
     margin: 0 auto;
-
+    border-radius;
 }
 
 header {
@@ -39,12 +40,37 @@ a {
     text-decoration: none;
 }
 
-.x {
-    color: red;
+#x button {
+    color: rgb(20, 3, 92);
+    background-color: #e0e0e0;
+    text-align: center;
+    
 }
 
 .profilbild {
 
     border: 2px solid #4fc3f7;
     box-shadow: 0 0 10px #4fc3f7;
+}
+
+button {
+    background-color: rgba(163, 175, 242, 0.637);
+    align-items: center;
+}
+
+#restart {
+    color: rgb(0, 0, 0);
+    background-color: blue;
+    border-color: blue;
+    align-items: center;
+    text-align: center;
+}
+section {
+    background-color: rgb(62, 59, 56);
+}
+#spielefeld {
+    background-color: rgb(39, 44, 44);
+    color:gold;
+    align-items: center;
+    text-align: center;
 }
