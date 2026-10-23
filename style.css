@@ -12,6 +12,7 @@ h1 {
 h2 {
     color: #4fc3f7;
     text-align: center;
+    background-color:  rgb(62, 59, 56);;
 }
 
 .profilbild {
@@ -36,7 +37,7 @@ header {
 }
 
 a {
-    color: brown;
+    color: rgb(42, 149, 165);
     text-decoration: none;
 }
 
@@ -66,11 +67,15 @@ button {
     text-align: center;
 }
 section {
-    background-color: rgb(62, 59, 56);
+    
 }
 #spielefeld {
-    background-color: rgb(39, 44, 44);
+   
     color:gold;
     align-items: center;
     text-align: center;
+}
+#punktestand {
+    justify-content: space-between;
+    display: flex
 }
