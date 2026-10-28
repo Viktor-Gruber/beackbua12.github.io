@@ -55,8 +55,9 @@ a {
 }
 
 button {
-    background-color: rgba(163, 175, 242, 0.637);
+    background-color :#1e1e1e;
     align-items: center;
+    color: rgb(67, 60, 140);
 }
 
 #restart {
@@ -78,4 +79,7 @@ section {
 #punktestand {
     justify-content: space-between;
     display: flex
+}
+button img {
+    width: 200px;
 }

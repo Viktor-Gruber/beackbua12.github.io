@@ -1,6 +1,6 @@
 console.log("Hello, World!");
 // liste aufpassen const kann man nicht mehr ändern let schon :)
-// o doch sr, mit einen push :( btw das ist der scope gilt halt für alles 
+// o doch sr, mit einen push :( btw das ist der scope der zwischen raum für alle 
     const playeranzeige = document.getElementById("player")
     const computeranzeige = document.getElementById("computer")
     let player = 0
@@ -49,7 +49,7 @@ document.getElementById("x").addEventListener("click", function () {
 document.getElementById("Schere").addEventListener("click", function () {
     spielen("Schere")
 })
-// Stoa
+// Huans Stoa
 
 document.getElementById("Stein").addEventListener("click", function () {
 
@@ -57,7 +57,7 @@ document.getElementById("Stein").addEventListener("click", function () {
 });
 
 
-//  Papier
+// Scheiß Papier
 
 document.getElementById("Papier").addEventListener("click", function () {
     // snipi snapi snu aaaaaaaaaaaaa
