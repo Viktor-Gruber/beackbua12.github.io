@@ -20,7 +20,7 @@ function spielen(spielerWahl) {
     // Für die Konsole zum Testen document (console.log)
    
     const ergebnis = document.getElementById("ergebnis")
-    spielerw.textContent = "Spieler: " + spielerWahl;
+     spielerw.textContent = "Spieler: " + spielerWahl;
     spielerbild.src = spielerWahl.toLowerCase() + ".png";
    
     computerbild.src = computerWahl.toLowerCase() + ".png";
@@ -39,7 +39,7 @@ function spielen(spielerWahl) {
         ergebnis.textContent = "Super gewonnen";
         player += 1
         playeranzeige.textContent = "Spieler: " + player;
-        confetti()
+        confetti();
         
     } else {
         console.log("Du hast verloren");
