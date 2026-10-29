@@ -1,8 +1,13 @@
 console.log("Hello, World!");
 // liste aufpassen const kann man nicht mehr ändern let schon :)
 // o doch sr, mit einen push :( btw das ist der scope der zwischen raum für alle 
-    const playeranzeige = document.getElementById("player")
+    
+const playeranzeige = document.getElementById("player")
+    const spielerw = document.getElementById("spielerw")
+    const computerw = document.getElementById("computerw")
     const computeranzeige = document.getElementById("computer")
+    const computerbild = document.getElementById("computerbild")
+    const spielerbild = document.getElementById("spielerbild")
     let player = 0
     let computer = 0
 const moeglichkeiten = ["Schere", "Stein", "Papier"];
@@ -15,12 +20,15 @@ function spielen(spielerWahl) {
     // Für die Konsole zum Testen document (console.log)
    
     const ergebnis = document.getElementById("ergebnis")
-    const wahl = document.getElementById("wahl")
-    wahl.textContent = "Spieler: " + spielerWahl + " Computer: " + computerWahl;
+    spielerw.textContent = "Spieler: " + spielerWahl;
+    spielerbild.src = spielerWahl.toLowerCase() + ".png";
+    computeranzeige.textContent = "Computer: " + computer;
+    computerbild.src = computerWahl.toLowerCase() + ".png";
+    document.getElementById("bilder").hidden = false;
+        computerw.textContent = "Computer: " + computerWahl;
     if (spielerWahl === computerWahl) {
         console.log("Unentschieden!");
         ergebnis.textContent = "Unentschieden";
-
         // === checkt gleich ? && checkt ob beide true sind || ist gleich wie in python ein or 
     } else if (
         (spielerWahl === "Schere" && computerWahl === "Papier") ||
@@ -31,12 +39,11 @@ function spielen(spielerWahl) {
         ergebnis.textContent = "Super gewonnen";
         player += 1
         playeranzeige.textContent = "Spieler: " + player;
-
+        
     } else {
         console.log("Du hast verloren");
         ergebnis.textContent = "Verloren";
         computer += 1
-        computeranzeige.textContent = "Computer: " + computer;
     }
 };
 // spiele Button
@@ -49,7 +56,7 @@ document.getElementById("x").addEventListener("click", function () {
 document.getElementById("Schere").addEventListener("click", function () {
     spielen("Schere")
 })
-// Huans Stoa
+// Stoa
 
 document.getElementById("Stein").addEventListener("click", function () {
 
@@ -57,7 +64,7 @@ document.getElementById("Stein").addEventListener("click", function () {
 });
 
 
-// Scheiß Papier
+// Papier
 
 document.getElementById("Papier").addEventListener("click", function () {
     // snipi snapi snu aaaaaaaaaaaaa

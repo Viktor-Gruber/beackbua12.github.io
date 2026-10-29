@@ -1,3 +1,8 @@
+[hidden] {
+    display:none
+    !important
+
+}
 body {
     color: #e0e0e0;
     background-color: #1e1e1e;
@@ -12,22 +17,13 @@ h1 {
 h2 {
     color: #4fc3f7;
     text-align: center;
-    background-color:  rgb(62, 59, 56);;
-}
-
-.profilbild {
-
-    width: 200px;
-    width: 180px;
-
-
-
+    background-color:  rgb(62, 59, 56);
 }
 
 main {
     max-width: 800px;
     margin: 0 auto;
-    border-radius;
+    border-radius:
 }
 
 header {
@@ -40,7 +36,7 @@ a {
     color: rgb(42, 149, 165);
     text-decoration: none;
 }
-
+/* restart butrton */ 
 #x button {
     color: rgb(20, 3, 92);
     background-color: #e0e0e0;
@@ -52,12 +48,15 @@ a {
 
     border: 2px solid #4fc3f7;
     box-shadow: 0 0 10px #4fc3f7;
+    width: 200px;
+    width: 180px;
+
 }
 
 button {
     background-color :#1e1e1e;
     align-items: center;
-    color: rgb(67, 60, 140);
+    color: #e0e0e0;
 }
 
 #restart {
@@ -67,9 +66,7 @@ button {
     align-items: center;
     text-align: center;
 }
-section {
     
-}
 #spielefeld {
    
     color:gold;
@@ -81,5 +78,15 @@ section {
     display: flex
 }
 button img {
-    width: 200px;
+    width: 50px;
+}
+#bilder {
+    display:flex;
+    justify-content: space-between;
+
+}
+#wahltext {
+    display:flex;
+    justify-content: space-between;
+    
 }
