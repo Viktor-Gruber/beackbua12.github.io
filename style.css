@@ -24,6 +24,7 @@ main {
     max-width: 800px;
     margin: 0 auto;
     border-radius:
+    padding 016px;
 }
 
 header {
@@ -78,7 +79,7 @@ button {
     display: flex
 }
 button img {
-    width: 50px;
+  width: 50px;
 }
 #bilder {
     display:flex;
@@ -89,4 +90,8 @@ button img {
     display:flex;
     justify-content: space-between;
     
+}
+#bilder img{
+    width: 150px;
+    max-width: 40%;
 }
