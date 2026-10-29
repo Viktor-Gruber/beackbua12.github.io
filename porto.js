@@ -80,4 +80,5 @@ document.getElementById("restart").addEventListener("click", function () {
     playeranzeige.textContent = "Spieler: " + player;
     computeranzeige.textContent = "Computer: " + computer;
 })
+// test
 
