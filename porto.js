@@ -22,7 +22,7 @@ function spielen(spielerWahl) {
     const ergebnis = document.getElementById("ergebnis")
     spielerw.textContent = "Spieler: " + spielerWahl;
     spielerbild.src = spielerWahl.toLowerCase() + ".png";
-    computeranzeige.textContent = "Computer: " + computer;
+   
     computerbild.src = computerWahl.toLowerCase() + ".png";
     document.getElementById("bilder").hidden = false;
         computerw.textContent = "Computer: " + computerWahl;
@@ -39,12 +39,15 @@ function spielen(spielerWahl) {
         ergebnis.textContent = "Super gewonnen";
         player += 1
         playeranzeige.textContent = "Spieler: " + player;
+        confetti()
         
     } else {
         console.log("Du hast verloren");
         ergebnis.textContent = "Verloren";
         computer += 1
     }
+    computeranzeige.textContent = "Computer: " + computer;
+   
 };
 // spiele Button
 document.getElementById("x").addEventListener("click", function () {
